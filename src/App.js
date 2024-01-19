@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import questions from "./questions";
+// import questions from "./questions";
 import Result from "./components/Result";
 import QuestionBox from "./components/QuestionBox";
 
 
 
 function App() {
+
   const [theme, setTheme] = useState(true)
   const [themeName, setThemeName] = useState("dark")
 
@@ -27,15 +28,20 @@ function App() {
   useEffect(()=>{
     setThemeName(themeName==="Light"?"Dark":"Light")
   },[theme])
+  
 
   return (
-    <div className="body">
+   <div>
+          <div className="mode" onClick={Toggle}>{themeName}</div>
+      
+      <div className="box" style={backGroundColors(theme)}>
+        <QuestionBox heading="hello"/>
+      </div>
 
-      <h1 className="main"style={backGroundColors(theme)}>QUIZZARD</h1>
-      <div className="mode" onClick={Toggle}>{themeName}</div>
-      
-      
-    </div>
+   
+   </div>
+    
+    
   );
 }
 
