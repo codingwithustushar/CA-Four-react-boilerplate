@@ -26,7 +26,7 @@ function App() {
   
 
   useEffect(()=>{
-    setThemeName(themeName==="Light"?"Dark":"Light")
+    setThemeName(themeName==="💡Light"?"🌚Dark":"💡Light")
   },[theme])
   
 
@@ -38,7 +38,6 @@ function App() {
         <QuestionBox heading="hello"/>
       </div>
 
-   
    </div>
     
     
