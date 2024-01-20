@@ -67,6 +67,7 @@ export default function QuestionBox() {
           <Result score={score} totalScore={questions.length} onRestart={restartGame} />
         ) : (
           <>
+          {/* here all the question will show with options */}
         <div className='question'>
         <div className='question' style={{ color: highlight ? '#D22727' : 'black' }}>
         <span id='quenum'>Questions:{currentQue+1}of5</span><br></br>
@@ -84,6 +85,7 @@ export default function QuestionBox() {
           })}
           </div>
           <div>
+            {/* button created form higlight and remove the highlight  */}
            <button onClick={handlehighlight} className='high'>Highlight</button>
         <button onClick={removehightlight} className='high'>Remove Highlight</button>
         </div>

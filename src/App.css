@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* light and dark mode css */
 .mode{
     background-color: #D22727;
     border-radius: 23px;
@@ -15,6 +16,7 @@
     margin-left: 90vw;
     text-align: center;
 }
+/* name of the quiz that is quizzard */
 .name{
     margin-left: 24vw;
     margin-top: 0vw;
@@ -28,6 +30,7 @@
     -1px -1px 0 #fcf8f8;
     
 }
+/* question container */
 .container{
     background-color: black;
     border-radius: 2vw;
@@ -54,6 +57,7 @@
 #quenum{
     letter-spacing: 0.3vw;
 }
+/* question option css */
 .opt_btn{
     display: flex;
     margin-left: 12vw;
@@ -61,6 +65,7 @@
     background: rgba(174, 95, 95, 0.55);
     color: white;
 }
+/* all the button css */
 button{
     text-align: center;
     margin-top: 2vw;
@@ -75,6 +80,7 @@ button{
 button:hover{
     background-color: #D22727;
 }
+/* highlight button part */
 .high{
    position: relative;
    color: #000;

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-// import questions from "./questions";
+import questions from "./questions";
 import Result from "./components/Result";
 import QuestionBox from "./components/QuestionBox";
 
 
 
 function App() {
-
+//the function works for light and dark mode of the page
   const [theme, setTheme] = useState(true)
   const [themeName, setThemeName] = useState("dark")
 
@@ -32,6 +32,7 @@ function App() {
 
   return (
    <div>
+    
           <div className="mode" onClick={Toggle}>{themeName}</div>
       
       <div className="box" style={backGroundColors(theme)}>
